@@ -4,10 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>RPS</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
 </head>
 <body>
-    <script src="java.js"></script>
+    <div class="Title">ROCK, PAPER, SCISSORS</div>
+    <div class ="Score">Score</div>
+    <div class = boardContain>
+        <div class = "Scoreboard" id = "UserScore">Player: 0</div>
+        <div class = "Scoreboard" id = "CompScore">Computer: 0</div>
+        <div class = "Scoreboard" id ="Ties">Ties : 0</div>
+    </div>
+    <div class="BtnContain">
+        <button class="Symbol" id="RockBtn">🪨</button>
+        <button class="Symbol" id="PaperBtn">📝</button>
+        <button class="Symbol" id="SciBtn">✂</button>
+    </div>
     
+    <div class="modal" id="endgameModal">
+        <p class="modal-title" id="endgameMsg"></p>
+        <button class="btn btn-restart" id="restartBtn">Play Again?</button>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <script src="java.js"></script>
+
 </body>
 </html>
